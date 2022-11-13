@@ -83,8 +83,9 @@ const Blog = () => {
             <div className="nav-scroller py-1 mb-2">
                 <nav className="nav d-flex">
                 <Link className="p-2 text-muted" to='/category/exercise'>Exercise</Link>
-                    <Link className="p-2 text-muted" to='/category/diet'>Diet</Link>
-
+                <Link className="p-2 text-muted" to='/category/diet'>Diet</Link>
+                <Link className="p-2 text-muted" to='/category/injuries'>Injuries</Link>
+                <Link className="p-2 text-muted" to='/category/hygiene'>Hygiene</Link>
                 </nav>
             </div>
 

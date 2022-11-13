@@ -5,6 +5,8 @@ from django.template.defaultfilters import slugify
 class Categories(models.TextChoices):
     EXERCISE = 'exercise'
     DIET = 'diet'
+    HYGIENE = 'hygiene'
+    INJURIES_AND_ACCIDENTS = 'injuries'
 
 
 class BlogPost(models.Model):
