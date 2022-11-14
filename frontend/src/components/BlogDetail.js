@@ -17,7 +17,10 @@ const BlogDetail = (props) => {
 
             }
         };
-
+        document.addEventListener('mousedown', fetchData);
+        return() => {
+          document.removeEventListener('mousedown', fetchData);
+        };
         fetchData();
     }, [props.match.params.id]);
 

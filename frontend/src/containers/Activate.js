@@ -36,6 +36,7 @@ const Activate = ({ verify, match }) => {
             </div>
         </div>
     );
+    
 };
 
 export default connect(null, { verify })(Activate);

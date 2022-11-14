@@ -103,7 +103,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'testingwebsite69@gmail.com'
-EMAIL_HOST_PASSWORD = 'atri725415'
+EMAIL_HOST_PASSWORD = 'jspyeuquruniqvvq'
 EMAIL_USE_TLS = True
 
 
@@ -153,9 +153,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTHENTICATION_BACKENDS = (
-    'social_core.backends.google.GoogleOAuth2',
-    'social_core.backends.facebook.FacebookOAuth2',
-    'django.contrib.auth.backends.ModelBackend'
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 SIMPLE_JWT = {
@@ -191,6 +189,7 @@ DJOSER = {
 
 
 AUTH_USER_MODEL = 'accounts.UserAccount'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 SUMMERNOTE_THEME = 'bs4'
 
