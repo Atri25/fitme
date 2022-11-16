@@ -7,7 +7,7 @@ class Categories(models.TextChoices):
     EXERCISE = 'exercise'
     DIET = 'diet'
     HYGIENE = 'hygiene'
-    INJURIES_AND_ACCIDENTS = 'injuries'
+    YOGA = 'yoga'
 
 
 class BlogPost(models.Model):
@@ -48,3 +48,4 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.title
+

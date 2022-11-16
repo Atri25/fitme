@@ -27,27 +27,26 @@ const Navbar = ({ logout, isAuthenticated }) => {
   );
 
   const authLinks = () => (
-    <div>
+  
+      <Fragment>
     <li className="nav-item">
       <a className="nav-link" href="#!" onClick={logout_user}>
         Logout
       </a>
     </li>
-
     <li className="nav-item">
       <NavLink className="nav-link" to="/blog">
         Blog
       </NavLink>
     </li>
-    </div>
-
+    </Fragment>
   );
 
   return (
     <Fragment>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <Link className="navbar-brand" to="/">
-          Auth System
+          FitMe
         </Link>
         <button
           className="navbar-toggler"

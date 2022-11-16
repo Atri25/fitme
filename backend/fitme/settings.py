@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'fitme.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'phy_wellbeing',
+        'NAME': 'wellbeing2',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': '127.0.0.1',
@@ -187,7 +187,7 @@ DJOSER = {
 }
 REST_FRAMEWORK = {
    'DEFAULT_AUTHENTICATION_CLASSES': (
-       'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
 
    ),

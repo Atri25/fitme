@@ -88,7 +88,7 @@ const Blog = () => {
                 <nav className="nav d-flex">
                 <Link className="p-2 text-muted" to='/category/exercise'>Exercise</Link>
                 <Link className="p-2 text-muted" to='/category/diet'>Diet</Link>
-                <Link className="p-2 text-muted" to='/category/injuries'>Injuries</Link>
+                <Link className="p-2 text-muted" to='/category/yoga'>Yoga</Link>
                 <Link className="p-2 text-muted" to='/category/hygiene'>Hygiene</Link>
                 </nav>
             </div>

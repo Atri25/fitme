@@ -7,7 +7,7 @@ from blog.serializers import BlogPostSerializer
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
-# @method_decorator(login_required, name='dispatch')
+
 class BlogPostListView(ListAPIView):
     queryset = BlogPost.objects.order_by('-date_created')
     serializer_class = BlogPostSerializer

@@ -25,9 +25,7 @@ export const load_user = () => async dispatch => {
                 'Authorization': `JWT ${localStorage.getItem('access')}`,
                 'Accept': 'application/json'
             }
-        }.catch(function (erro) {
-            console.log(erro);
-        });
+        }; 
 
         try {
             const res = await axios.get(`http://127.0.0.1:8000/auth/users/me/`, config);
@@ -55,9 +53,7 @@ export const checkAuthenticated = () => async dispatch => {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }
-        }.catch(function (erro) {
-            console.log(erro);
-        });
+        }; 
 
         const body = JSON.stringify({ token: localStorage.getItem('access') });
 
@@ -91,9 +87,7 @@ export const login = (email, password) => async dispatch => {
         headers: {
             'Content-Type': 'application/json'
         }
-    }.catch(function (erro) {
-        console.log(erro);
-    });
+    };
 
     const body = JSON.stringify({ email, password });
 
@@ -112,7 +106,6 @@ export const login = (email, password) => async dispatch => {
         })
     }
 };
-
 export const signup = (name, email, password, re_password) => async dispatch => {
     const config = {
         headers: {
@@ -135,7 +128,6 @@ export const signup = (name, email, password, re_password) => async dispatch => 
         })
     }
 };
-
 export const verify = (uid, token) => async dispatch => {
     const config = {
         headers: {

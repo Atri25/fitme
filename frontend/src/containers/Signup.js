@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signup } from '../actions/auth';
-import axios from 'axios';
+// import axios from 'axios';
 
 const Signup = ({ signup, isAuthenticated }) => {
     const [accountCreated, setAccountCreated] = useState(false);
@@ -10,7 +10,7 @@ const Signup = ({ signup, isAuthenticated }) => {
         name: '',
         email: '',
         password: '',
-        re_password: ''
+        re_password: '',
     });
 
     const { name, email, password, re_password } = formData;
